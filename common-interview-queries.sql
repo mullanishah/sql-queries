@@ -29,10 +29,10 @@ group by department
 order by noOfEmps desc;
 
 /* duplicate records */
-Select empfname, emplname, department, count(*) as noOfEmps
+Select empfname, emplname, department, count(*) as duplicateCount
 from `employee-db`.Employeeinfo
 group by empfname, emplname, department
-having noOfEmps > 1;
+having duplicateCount > 1;
 
 /* max/highest salary */
 select max(salary)
