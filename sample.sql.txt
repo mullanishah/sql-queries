@@ -1,1 +1,8 @@
 select * from product;
+
+select * from productDetails;
+
+select * from product where name = "smartphones";
+
+select * from productDetails where name = "smartphones";
+
